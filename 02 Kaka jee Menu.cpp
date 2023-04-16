@@ -12,6 +12,6 @@ int main()
     cout << "Chaat Fruit" << endl;
     cout << "Ice Cream" << endl;
 skip:
-
+    cout<<"Pulao";
     return 0;
 }
