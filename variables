@@ -1,0 +1,46 @@
+//thursday 18, 2023
+
+#include <iostream>
+using namespace std;
+
+int c =5; // global variable + example no 1 of variable c
+	 
+void fun(){
+	//we can anything with the vairable under the fuction
+	int c =10; //example no 2 of variable c
+	int a = 5;
+	cout<<a;
+}
+void funTWo(){
+	int c* =10; //example no 3 of variable c
+	int b = 6;
+	cout<<b;
+}
+void funThree(){
+	
+	int a  = 7;
+	cout<<a;
+	c++;	  //example no 4 of variable c
+}
+int main(){
+	//cout<<"Salam"; it will print "salam"
+	//cout<<fun();   	it will print 5
+	//cout<<funTwo();	it will print 6
+	//cout<<funThree();	it will print 7
+	
+	//and if we print like this
+	//cout<<a;
+	//cout<<b;
+	//cout<<a; these will throw error " it isn't declared in the scope
+	//				    because it not declared in the fucntion of main
+	cout<<c; //it will print coz it a global vairable
+}
+
+//code no 2
+int main(){
+	for (int i = 0; i<10;i++) //variable under the braces is caLLed BLock level Variables
+				  //no other fuction know this vairable outside of the function
+	cout<<i;
+	for (int i =10; i<20; i++)
+	cout<<i;
+}
